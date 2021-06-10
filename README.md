@@ -1,6 +1,6 @@
 # ConsumptionOfCampus
 
-对数据进行一些可视化的展示，个人练手项目
+对数据进行一些可视化的展示，个人练手项目，具体代码等毕设答辩结束一段时间后上传
 
 ### 用到的技术与服务
 
@@ -8,7 +8,7 @@
 - 服务器相关：nginx、阿里云轻量应用服务器（CentOS 8.2）
 - 数据库相关：mysql、JDBC、druid数据库连接池、dbutils
 
-### 关键步骤
+### 项目部署上线关键步骤
 
 ##### 安装数据库
 
@@ -81,7 +81,7 @@
 - 如图更改配置文件
 
 <p align="center">
-        <img src="https://github.com/TortoiseKnightB/ConsumptionOfCampus/blob/main/images/003.png?raw=true" width="500"/>
+        <img src="https://github.com/TortoiseKnightB/ConsumptionOfCampus/blob/main/images/004.png?raw=true" width="500"/>
 </p>
 
 - `cd /usr/local/nginx/sbin`
