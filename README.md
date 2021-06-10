@@ -47,7 +47,7 @@
 - `cd nginx-1.20.1/`
 - 配置：`./configure`
 - 编译&&安装：` make && make install `
-- 开放防火墙端口：`firewall-cmd --zone=public --add-port=80/tcp --permanent`
+- 开放防火墙80端口：`firewall-cmd --zone=public --add-port=80/tcp --permanent`
 - 重启防火墙：`systemctl restart firewalld`
 - `cd /usr/local/nginx/sbin`
 - 启动nginx服务：`./nginx `
@@ -56,20 +56,38 @@
 
 - `cd /usr/src/apache-tomcat-8.5.66/webapps`
 - 如图导出项目war包
-- 将war包放入tomcat的webapp
+
+<p align="center">
+        <img src="https://github.com/TortoiseKnightB/ConsumptionOfCampus/blob/main/images/001.png?raw=true" width="500"/>
+</p>
+
+<p align="center">
+        <img src="https://github.com/TortoiseKnightB/ConsumptionOfCampus/blob/main/images/002.png?raw=true" width="500"/>
+</p>
+
+<p align="center">
+        <img src="https://github.com/TortoiseKnightB/ConsumptionOfCampus/blob/main/images/003.png?raw=true" width="500"/>
+</p>
+
+- 将war包放入tomcat的webapp目录下，运行tomcat，会自动解压war包生成项目
 - `cd /usr/src/apache-tomcat-8.5.66/bin`
-- `./shutdown.sh `
+- 重新启动tomcat：`./shutdown.sh `
 - `./startup.sh `
 
-7. 配置nginx代理
+##### 配置nginx代理
 
 - `cd /usr/local/nginx/conf`
-- ` vim nginx.conf`
+- 修改nginx配置文件：`vim nginx.conf`
 - 如图更改配置文件
+
+<p align="center">
+        <img src="https://github.com/TortoiseKnightB/ConsumptionOfCampus/blob/main/images/003.png?raw=true" width="500"/>
+</p>
+
 - `cd /usr/local/nginx/sbin`
-- `./nginx -s stop`
+- 重启nginx服务：`./nginx -s stop`
 - ` ./nginx `
-- 输入ip地址即可访问
+- 输入服务器ip地址即可访问
 
 
 
