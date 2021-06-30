@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <welcome-file-list>
+        <welcome-file>homeServlet</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>PeopleInCanteensServlet</servlet-name>
+        <servlet-class>com.example.web.PeopleInCanteensServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PeopleInTimeServlet</servlet-name>
+        <servlet-class>com.example.web.PeopleInTimeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PeopleInMajorServlet</servlet-name>
+        <servlet-class>com.example.web.PeopleInMajorServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PeopleInLowCostServlet</servlet-name>
+        <servlet-class>com.example.web.PeopleInLowCostServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PeopleInClusteringServlet</servlet-name>
+        <servlet-class>com.example.web.PeopleInClusteringServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>com.example.web.HomeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PeopleInCanteensServlet</servlet-name>
+        <url-pattern>/peopleInCanteensServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PeopleInTimeServlet</servlet-name>
+        <url-pattern>/peopleInTimeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PeopleInMajorServlet</servlet-name>
+        <url-pattern>/peopleInMajorServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PeopleInLowCostServlet</servlet-name>
+        <url-pattern>/peopleInLowCostServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PeopleInClusteringServlet</servlet-name>
+        <url-pattern>/peopleInClusteringServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/homeServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
